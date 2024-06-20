@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    </style>
+  </head>
+  <body>
+    <button>hello</button>
+    <button class="js-button">Second button</button>
+     <script>
+
+      console.log(document.querySelector('button').innerHTML);
+
+      document.querySelector('button')
+        .innerHTML='changed';
+      
+      console.log(document.querySelector('.js-button'));
+      
+      document.querySelector('.js-button').innerHTML='changed';
+      const buttonEl=document.querySelector('.js-button');
+      console.log(buttonEl);
+      //diplays title of document
+      /*console.log(document.title);
+      //to change the title
+      document.title='changed';
+      console.log(document.body);
+
+      console.log(typeof document.body);
+
+      console.log(document.body.innerHTML);
+
+      document.body.innerHTML='changed';
+
+      document.body.innerHTML= '<button>Good Job </button>';
+
+       /*document.body.innerHTML='hello';
+       document.title='Good Job';*/
+     </script>
+  </body>
+</html>
